@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play a simple Rock Paper Sicossers game in your browser.">
+    <title>Rock Paper Scissor Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1><b> ROCK PAPER SCISSOR GAME </b></h1>
+    <div class="choices">
+        <div class="choice" id="Rock">
+            <img src="https://sihoonathan.github.io/rock-paper-scissors/assets/img/rock2.png" alt="rock img" >
+        </div>
+        <div class="choice" id="Paper">
+            <img src="https://rock-paper-scissors-lilac-alpha.vercel.app/static/media/paper.png" alt="paper img">
+        </div>
+        <div class="choice" id="scissor">
+            <img src="https://i.pinimg.com/474x/67/eb/fd/67ebfd32e898b4ec3ae4e59ae33832c8.jpg" alt="scissor">
+        </div>
+    </div>
+    <div class="score-board">
+        <div class="score">
+            <p id="user-score">0</p>
+            <p>you</p>
+        </div>
+        <div class="score">
+            <p id="comp-score">0</p>
+            <p>comp</p>
+        </div>
+    </div>
+    <div class="msgcontainer">
+        <p class="msg" id="msg">
+            Pick Your Move
+        </p>
+    </div>
+    <div class="button">
+        <button id="new-game" >New-Game</button>
+        <button id="reset-btn">Reset-Game</button>
+    </div>
+    <audio id="win-sound" src="https://www.myinstants.com/media/sounds/flawless-victory-mk-x.mp3" preload="auto"></audio>
+    <audio id="lose-sound" src="https://www.myinstants.com/media/sounds/windows-xp-error.mp3" preload="auto"></audio>
+    <audio id="draw-sound" src="https://www.myinstants.com/media/sounds/sword-draw-sound-effect.mp3" preload="auto"></audio>
+
+    <!-- final sound's -->
+    <audio id="final-win-sound" src="https://www.myinstants.com/media/sounds/victory.mp3" preload="auto"></audio>
+    <audio id="final-lose-sound" src="https://www.myinstants.com/media/sounds/trombone.mp3" preload="auto"></audio>
+    <audio id="final-tie-sound" src="https://www.myinstants.com/media/sounds/spiderman-meme-song.mp3" preload="auto"></audio>
+
+    <audio id="touch-sound" src="https://www.myinstants.com/media/sounds/pop-cat-original-meme.mp3" preload="auto"></audio>
+
+    <footer class="down">WWW.fungame89@gmail.com</footer>
+    <script src="game.js"></script>
+</body>
+</html>
+
+
+
+
+

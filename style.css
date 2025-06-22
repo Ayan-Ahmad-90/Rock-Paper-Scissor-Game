@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+body {
+    background-image: url("https://media.sketchfab.com/models/657575194b58424d8d8bafe7374aa42d/thumbnails/cb0747c3185c4723a1bbb745644633f5/98e430d4136f4f4f825354e8cc965654.jpeg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    overflow: auto;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-color: rgba(255, 255, 255, 0.6); /* 0.6 = 60% white transparent */
+    z-index: -1;
+}
+
+
+
+h1{
+    height: 5rem;
+    line-height: 5rem;
+    background-color: #001d3d;
+    color: white;
+    font-size:3vmin;
+}
+
+.choice{
+    height: 122px;
+    width: 122px;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.choices{
+    display: flex;
+    margin-top: 3rem;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.choice:hover{
+    cursor: pointer;
+    background-color: #070707;
+}
+
+.score-board{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    gap: 5rem;
+}
+
+.msgcontainer{
+    margin-top: 5rem;
+}
+
+.msg{
+    background-color: black;
+    color: azure;
+    display: inline;
+    border-radius: 1rem;
+    font-size: 20px;
+    padding: 1rem;
+}
+
+#user-score{
+    color: rgb(255, 0, 81);
+    font-size: 2rem;
+}
+
+#comp-score{
+    color: rgb(0, 0, 255);
+    font-size: 2rem;
+}
+
+.button{
+    flex-direction: column;
+    margin-top: 3rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+#reset-btn{
+    padding: 0.5rem;
+    background-color: goldenrod;
+    color: crimson;
+    border-radius:1rem;
+    cursor: pointer;
+}
+
+#new-game{
+    padding: 0.5rem;
+    background-color:teal ;
+    border-radius: 1rem;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+footer{
+    height: 3rem;
+    background-color: black;
+    line-height:3rem;
+    color: #fff;
+    text-align: inherit;
+    font-size: 1rem;
+}
+
+/* ✨ Glow Animation */
+.choice.glow {
+  box-shadow: 0 0 20px 4px #00ffcc;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+/* 🔁 Reset glow after animation */
+.choice {
+  transition: all 0.3s ease;
+}
