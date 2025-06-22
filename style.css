@@ -134,6 +134,31 @@ footer{
   transition: all 0.3s ease;
 }
 
+@media (max-width: 600px) {
+    h1 {
+        font-size: 7vw;
+    }
+
+    .choice {
+        width: 80px;
+        height: 80px;
+    }
+
+    .msg {
+        font-size: 1rem;
+    }
+
+    #reset-btn,
+    #new-game {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .score-board {
+        font-size: 1.2rem;
+    }
+}
+
 /* 🔁 Reset glow after animation */
 .choice {
   transition: all 0.3s ease;
